@@ -79,43 +79,98 @@ body {
 }
 
 .socials-row > a svg {
-    color: var(--text);
+  color: var(--text);
 }
 
-.socials-row a :hover{
-    background-color: var(--btn-bg);
+.socials-row a :hover {
+  background-color: var(--btn-bg);
 }
 
-.form-welcome-row{
-    margin-bottom: 1rem;
+.form-welcome-row {
+  margin-bottom: 1rem;
 }
 
-.form-welcome-row h1{
-    color: var(--text);
-    font-size: 2rem;
-    line-height: 2rem;
-    font-weight: normal;
-    margin-top: 2rem;
-    margin-bottom: 0.75rem; 
+.form-welcome-row h1 {
+  color: var(--text);
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: normal;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
 }
 
-.form-welcome-row h2{
-    color: var(--text-gray);
-    font-size: 1.10rem;
-    font-weight: normal;
+.form-welcome-row h2 {
+  color: var(--text-gray);
+  font-size: 1.1rem;
+  font-weight: normal;
 }
 
-.divider{
-    display: flex;
-    flex-direction: row;
-    color: var(--secondary);
-    gap:16px;
-    align-items: center;
-    /* justify-content: center; */
+.divider {
+  display: flex;
+  flex-direction: row;
+  color: var(--secondary);
+  gap: 16px;
+  align-items: center;
+  /* justify-content: center; */
 }
-.divider-line{
-    width: 100%;
-    height: 1px;
-    background-color: var(--secondary);
-    opacity: 0.2;
+.divider-line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--secondary);
+  opacity: 0.2;
+}
+
+.from-wrapper {
+  /* background-color: yellow; */
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  gap: 1rem;
+  max-height: 200rem;
+  height: 100%;
+  width: 100%;
+}
+
+.logo {
+  height: 4rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+.my-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  position: relative;
+  gap: 1.25rem;
+  max-width: 26rem;
+  width: 100%;
+}
+
+.my-form_button {
+  background-color: var(--primary);
+  border: 1px solid var(--primary-light);
+  color: white;
+  white-space: nowrap;
+  display: grid;
+  place-items: center;
+  margin-top: 1.5rem;
+  line-height: 2.75rem;
+  outline: none;
+  border: none;
+  font-size: 1.125rem;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 10px rgba(0,0,0,.15);
+  transition: all .3s ease;
+}
+
+.form-side{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
 }
