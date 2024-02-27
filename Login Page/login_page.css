@@ -82,7 +82,7 @@ body {
   color: var(--text);
 }
 
-.socials-row a :hover {
+.socials-row > a :hover {
   background-color: var(--btn-bg);
 }
 
@@ -219,4 +219,60 @@ body {
   letter-spacing: 0.03rem;
   outline: none;
   background-color: var(--input-bg);
+  transition: 0.25s;
+  border-radius: 0.5rem;
+  text-indent: 1.25rem;
 }
+
+ .text-field label{
+  color: var(--text);
+
+ }
+ 
+ /*Below code is only to display error message*/
+ .text-field input:user-invalid{
+  background: var(--background);
+  color: var(--error);
+  border: 1px solid var(--error);
+ }
+
+ /*First we display none for error msg*/
+ .error-message {
+  display: none;
+ }
+ /*once we enter wrong value we will get error displayed in block*/
+
+ .text-field input:user-invalid~.error-message{
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.8rem;
+  color: var(--error);
+  font-weight:bold;
+ }
+ .text-field input:focus{
+  border: 1px solid var(--text);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 4px 0px;
+ }
+
+
+ /*ASIDE*/
+
+ .info-side{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 2rem;
+  background: url('./img/side_img.png') repeat center center;
+  background-position: cover;
+  max-height: 90rem;
+ }
+
+ .blockquote-wrapper{
+  gap: 1rem;
+  position: relative;
+  padding: 1rem;
+  max-width: 25rem;
+  background: white;
+  border-radius: 1rem;
+ }
