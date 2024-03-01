@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  /* background-color: #8890A7; */
+  background-color: #8890A7;
   font-family: "Times New Roman", serif;
   height: 100%;
   padding: 1rem;
@@ -318,3 +318,26 @@ body {
     display: none;
   }
  }
+
+ .dark img{
+  height: 2rem;
+ }
+
+ .dark{
+  position: absolute;
+  top:1rem;
+  right: 1rem;
+  border-radius: 1rem;
+  /* background-color: var(--primary-disabled);
+  color: var(--background); */
+ }
+
+.dark_btn{
+  background-color: #121212;
+  color:white;
+
+}
+
+.dark_a{
+  color: white;
+}
