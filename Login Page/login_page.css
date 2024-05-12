@@ -334,10 +334,6 @@ body {
 
 .dark_btn{
   background-color: #121212;
-  color:white;
-
+  color:var(--btn-bg);
 }
 
-.dark_a{
-  color: white;
-}
